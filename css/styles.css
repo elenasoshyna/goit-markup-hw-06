@@ -551,7 +551,7 @@ body {
 }
 .modal-confirmation {
   margin-top: 20px;
-  margin-bottom: 30px;
+ 
 }
 .confirmation-button {
   text-align: center;
@@ -609,6 +609,12 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .is-hidden {
